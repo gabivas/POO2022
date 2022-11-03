@@ -21,7 +21,6 @@ public:
 		for (int i = 0; i < nrApartamente; i++) {
 			vectorSuprafata[i] = 20;
 		}
-
 	}
 
 	Bloc(string strada, int nrApartamente, float* 
@@ -34,8 +33,8 @@ public:
 		for (int i = 0; i < this->nrApartamente; i++) {
 			this->vectorSuprafata[i] = vectorSuprafata[i];
 		}
-
 	}
+	
 	~Bloc() {
 		delete[] vectorSuprafata;
 	}
@@ -75,4 +74,5 @@ void main() {
 	//b3.afisareBloc();
 
 	delete pb2;
+	
 }
